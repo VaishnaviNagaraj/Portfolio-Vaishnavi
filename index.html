@@ -427,6 +427,56 @@
     .cs-text p strong { color: var(--ink); font-weight: 400; }
     .cs-highlight { color: var(--gold); font-weight: 400; }
 
+    .cs-metrics {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .7rem;
+    }
+    .cs-metric {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      border: 1px solid var(--gold-stroke);
+      border-radius: var(--r);
+      padding: .65rem 1rem;
+      background: var(--gold-dim);
+    }
+    .cs-metric-val {
+      /*font-family: var(--serif);*/
+      font-size: 1.25rem;
+      color: var(--gold);
+      line-height: 1.1;
+    }
+    .cs-metric-label {
+      font-size: .75rem;
+      color: var(--ink-2);
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      margin-top: .2rem;
+    }
+
+    .cs-callout {
+      border-left: 2px solid var(--gold);
+      background: var(--gold-dim);
+      border-radius: 0 var(--r) var(--r) 0;
+      padding: 1rem 1.4rem;
+      margin: .2rem 0;
+    }
+    .cs-callout-label {
+      font-size: .75rem;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      color: var(--gold);
+      opacity: .7;
+      margin-bottom: .35rem;
+    }
+    .cs-callout-text {
+      font-size: 1.25rem;
+      font-weight: 400;
+      color: var(--ink);
+      line-height: 1.78;
+    }
+
     .cs-docs {
       display: flex;
       flex-direction: column;
@@ -440,7 +490,7 @@
       color: var(--ink-2);
       margin-bottom: .7rem;
       text-transform: uppercase;
-      letter-spacing: .05em;
+      letter-spacing: .15em;
       font-weight: 500;
     }
 
@@ -513,8 +563,8 @@
       background: var(--wire);
       font-size: .75rem;
       font-weight: 500;
-      color: var(--ink-2);
-      letter-spacing: .05em;
+      color: var(--gold);
+      letter-spacing: .15em;
       text-transform: uppercase;
     }
 
@@ -945,8 +995,10 @@
           <p>And it's one of the most differentiated products in the video-editing space.</p>
           <p>But here's a gap I noticed:</p>
           <p>Professionals asked to repurpose a 1-hour company webinar into mobile-ready social clips face a surprisingly painful problem.</p>
-          <p>So I explored a feature idea: <span class="cs-highlight">Virtual multi-cam generation</span></p>
-          <p><strong>One camera. Three angles. Zero efforts.</strong></p>
+          <div class="cs-callout">
+            <div class="cs-callout-label">Feature Concept</div>
+            <div class="cs-callout-text">Virtual multi-cam generation -<br>One camera. Three angles. Zero effort.</div>
+          </div>
           <p>Upload a single wide-angle recording → Descript generates three virtual camera tracks automatically:</p>
           <p>1. Wide Master - full context shot</p>
           <p>2. Active Close-Up - auto-tracks the speaking face, optimized for mobile</p>
@@ -990,9 +1042,25 @@
           <p>The D2C wave is massive.</p>
           <p>But there is a silent leak in the bucket that is draining profitability:</p>
           <p>High RTO (Return To Origin).</p>
-          <p>Cashfree's <span class="cs-highlight">RTO Intelligence</span> solves this.</p>
-          <p>From my teardown, key wins we can expect:</p>
-          <p>1. RTO Reduction Rate: &gt;25%<br>2. COD-to-Prepaid Conversion: &gt;10%<br>3. False Positive Rate: &lt;2%</p>
+          <div class="cs-callout">
+            <div class="cs-callout-label">The Solution</div>
+            <div class="cs-callout-text">RTO Intelligence - turning return-risk signals into prepaid conversions.</div>
+          </div>
+          <p>From the teardown, key wins we can expect for merchants already drowning in high return rates:</p>
+          <div class="cs-metrics">
+            <div class="cs-metric">
+              <span class="cs-metric-val">&gt;25%</span>
+              <span class="cs-metric-label">RTO Reduction</span>
+            </div>
+            <div class="cs-metric">
+              <span class="cs-metric-val">&gt;10%</span>
+              <span class="cs-metric-label">COD → Prepaid</span>
+            </div>
+            <div class="cs-metric">
+              <span class="cs-metric-val">&lt;2%</span>
+              <span class="cs-metric-label">False Positive</span>
+            </div>
+          </div>
           <p>I have attached the full teardown, PRD documents for curious fellow product geeks, designers, and PMs.</p>
         </div>
 
@@ -1185,9 +1253,9 @@
         <span class="c-link-icon" style="font-weight:700">in</span>
         LinkedIn Profile
       </a>
-      <a href="mailto:vaishnavinagarajbhat@gmail.com" class="c-link">
+      <a href="mailto:vaishnavinsbhat@gmail.com" class="c-link">
         <span class="c-link-icon">✉</span>
-        vaishnavinagarajbhat@gmail.com
+        vaishnavinsbhat@gmail.com
       </a>
     </div>
   </div>
